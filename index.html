@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!--
+Requisitos específicos:
+Jquery : linha 50 no index e script na pasta Js/index
+JavaScript: validação de cnpj - Formulario e js/valida-documento.js
+Css: Estilizar o rodapé usando exclusivamente css - linha 191 da index
+HTML: Utilizar <aside> e <article> / aside = linha 118 e article 173
+realizar comentário no código linha 4 onde estão aplicados os requisitos específicos 
+
+Requisitos BootStrap:
+Layout responsivo usando grid = grid container
+formulário  ok
+menu drop-down/nav-bar responsivo ok 
+Estilo nos botões e texto ok
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prolab - Laboratório de análises clínicas em Ubajara</title>
+  <link rel="shortcut icon" href="/img/favicon.ico" />
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <!-- Estilos -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Progress Bar -->
+  <script src="js/progressbar.min.js"></script>
+  <!-- Parallax -->
+  <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+
+<body>
+  <div id="subir-float"><a href="#header-logo-cont"><i class="fas fa-arrow-circle-up"></i></a></div>
+  <header>
+    <div id="header-logo-cont">
+      <div class="container" id="nav-container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+          <a class="navbar-brand" href="index.html">
+            <img id="logo" src="img/prolabPNG.png" width="200px" height="30px" alt="Prolab">
+          </a>
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao3">
+            <span class="navbar-toggler-icon"></span>
+            <!--menu hamburguer-->
+          </button>
+          <div id="navegacao3" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" id="about-menu" href="sobre.html">Sobre nós</a>
+              <a class="nav-item nav-link" id="services-menu" href="Servicos.html">Serviços e Agendamentos</a>
+              <a class="nav-item nav-link" id="portfolio-menu" href="Resultado_de_exames.html">Resultados</a>
+              <a class="nav-item nav-link" id="contact-menu" href="Contatos.html">Contatos</a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid">
+    <!-- slider -->
+    <div id="mainSlider" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+        <li data-target="#mainSlider" data-slide-to="1"></li>
+        <li data-target="#mainSlider" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/2.jpg" class="d-block w-100" alt="Imagem sobre teste de covid-19">
+          <div class="carousel-caption d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/1.jpeg" class="d-block w-100" alt="Imagem sobre exames oferecidos">
+          <div class="carousel-caption d-md-block">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/3.jpg" class="d-block w-100" alt="Coleta domiciliar e formas de pagamento">
+          <div class="carousel-caption d-md-block">
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#mainSlider" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#mainSlider" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Serviços da empresa -->
+    <div id="services-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3 class="main-title">Nossas especialidades</h3>
+          </div>
+
+          <aside class="col-md-4 service-box">
+            <i class="fas fa-clipboard-check"></i>
+            <h4>Check-up Completo</h4>
+            <p class="text-justify"> Hemograma, Glicose, Colesterol, Triglicérides, Ureia e Creatinina, Tgo | Tgp,
+              Sumário de urina, Parasitológico de fezes.</p>
+          </aside>
+
+          <aside class="col-md-4 service-box">
+            <i class="fas fa-virus-slash"></i>
+            <h4>Teste sorológico para COVID-19 IgG e IgM</h4>
+            <p class="text-justify">É indicado para pacientes com suspeita de COVID-19 com 15 ou mais dias de
+              sintomas.</p>
+          </aside>
+
+          <aside class="col-md-4 service-box">
+            <i class="fas fa-dna"></i>
+            <h3>Teste de paternidade (DNA)</h3>
+            <p class="text-justify">O teste de paternidade de DNA é uma metodologia molecular utilizada para
+              determinar se dois indivíduos possuem vínculo biológico ou não, comparando as sequências de DNA entre
+              eles.</p>
+          </aside>
+
+          <aside class="col-md-4 service-box">
+            <i class="fas fa-prescription-bottle-alt"></i>
+            <h4>Exame Toxicológico</h4>
+            <p class="text-justify">O exame toxicológico de larga janela de detecção é simples, rápido, não invasivo e
+              indolor. Não exige qualquer preparo prévio do motorista.
+              A coleta do material é feita por profissionais especializados.</p>
+          </aside>
+
+          <aside class="col-md-4 service-box">
+            <i class="fas fa-baby"></i>
+            <h4>Teste do pezinho</h4>
+            <p class="text-justify">O Teste do Pezinho é um exame rápido em que gotinhas de sangue do calcanhar do
+              bebê são coletadas e tem a finalidade de diagnosticar e impedir o desenvolvimento de doenças genéticas
+              ou metabólicas que podem levar à deficiência intelectual ou causar prejuízos à qualidade de vida.</p>
+          </aside>
+
+          <aside class="col-md-4 service-box">
+            <i class="fas fa-hand-holding-medical"></i>
+            <h4>Exames laboratoriais para gestante</h4>
+            <p class="text-justify">O exame de sexagem fetal possibilita que você descubra o sexo do seu bebê
+              através de processo pouco invasivo, com precisão superior a 99% já a partir da 8ª semana de gestação.
+              Basta agendar seu exame e descubra o sexo do bebê.</p>
+          </aside>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- REDES SOCIAIS -->
+    <div id="call-area">
+      <div class="container">
+        <div class="row">
+          <p>Redes Sociais</p>
+          <article>
+            <ul class="social-network social-circle">
+              <li><a href="https://www.facebook.com/Laborat%C3%B3rio-Prolab-Ubajara-114600763661039/" target="_blank"
+                  class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="mailto:laboratorioprolabubj@hotmail.com" target="_blank" class="icoEmail" title="Email"><i
+                    class="fa fa-envelope"></i></a></li>
+              <li><a href="https://api.whatsapp.com/message/5Y67HF2JSJW3I1" target="_blank" class="icoWhatsapp"
+                  title="Whatsapp"><i class="fa fa-whatsapp"></i></a></li>
+              <li><a href="https://www.instagram.com/laboratorioprolabubj/" target="_blank" class="icoInsta"
+                  title="Instagram"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+          </article>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <footer class="footer-d">
+      <div class="footer-left">
+        <img src="img/prolabPNG.png" width="300px" height="90px" alt="Logomarca Prolab"><br><br><br><br>
+        <p class="footer-company-name">Prolab - Laboratório de análises clínicas em Ubajara © 2021</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fas fa-map-marked"></i>
+          <p><span>Rua Prudêncio Furtado, N°211 -
+            </span> Centro - Ubajara / CE</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p><span>(88) 99809-9423
+            </span> (88) 99833-9633</p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:laboratorioprolabubj@hotmail.com">laboratorioprolabubj@hotmail.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>HORÁRIOS DE ATENDIMENTO
+          </span>Segunda a Sexta: Das 6h00 - 17h00 <br>
+          Sábado: Das 6h00 - 13h00
+        </p>
+        <a href="https://api.whatsapp.com/message/5Y67HF2JSJW3I1" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+          <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
+      </div>
+
+    </footer>
+    <!-- Scripts do projeto -->
+    <script src="js/scripts.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

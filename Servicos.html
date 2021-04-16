@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços e Agendamentos</title>
+    <link rel="shortcut icon" href="/img/favicon.ico" />
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/servicos.css">
+    <!--CSS FORMULÁRIO -->
+    <link rel="stylesheet" href="css/resultados.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Scripts (jQuery não pode ser o slim que vem do Boostrap) -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js">
+    </script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Progress Bar -->
+    <script src="js/progressbar.min.js"></script>
+    <!-- Parallax -->
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+</head>
+
+<body style="background-color: rgb(211, 209, 207)">
+    <div id="subir-float"><a href="#header-logo-cont"><i class="fas fa-arrow-circle-up"></i></a></div>
+    <header>
+        <div id="header-logo-cont">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src="img/prolabPNG.png" width="200px" height="30px" alt="Prolab">
+                </a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao3">
+                    <span class="navbar-toggler-icon"></span>
+                    <!--menu hamburguer-->
+                </button>
+                <div id="navegacao3" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link" id="about-menu" href="sobre.html">Sobre nós</a>
+                        <a class="nav-item nav-link" id="services-menu" href="Servicos.html">Serviços e Agendamentos</a>
+                        <a class="nav-item nav-link" id="portfolio-menu" href="Resultado_de_exames.html">Resultados</a>
+                        <a class="nav-item nav-link" id="contact-menu" href="Contatos.html">Contatos</a>
+                    </ul>
+                </div>
+        </div>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <h1 class="display-4 font-weight-bold text-center">Agendamentos</h1>
+                    <p class="font-italic text-muted mb-0 text-center">Para a sua comodidade e segurança, realizamos
+                        também coleta domiciliar.</p>
+                    <p class="font-italic text-muted text-center">*Taxa de deslocamento mediante a sua localização.</p>
+                    <p class="text-center">Temos o preço mais acessível da região.</p>
+                    <div class="py-4 text-center"><i class="fa fa-calendar fa-5x"></i></div>
+                    <!-- Date Picker Input -->
+                    <div class="form-group mb-4">
+                        <div class="datepicker date input-group p-0 shadow-sm">
+                            <input type="text" placeholder="Escolha aqui o melhor dia para você"
+                                class="form-control py-4 px-4" id="reservationDate">
+                            <div class="input-group-append"><span class="input-group-text px-4"><i
+                                        class="fa fa-clock-o"></i></span></div>
+                        </div>
+                    </div>
+                    <!-- DEnd ate Picker Input -->
+
+                    <!-- For Demo Purpose -->
+                    <div class="text-center">
+                        <p class="font-italic text-muted mb-0">Não perca tempo</p>
+                        <h4 id="pickedDate" class="font-weight-bold text-uppercase mb-3">Agende já seu exame</h4>
+                        <a href="#"
+                            class="btn btn-primary btn-sm px-4 rounded-pill text-uppercase font-weight-bold shadow-sm">Confirmar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossos Serviços</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-fluid" src="img/servicos.png" alt="analise em microscopio">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">
+                                Na Prolab, todos os detalhes importam</h3>
+                            <p>Acreditamos que cuidar da saúde
+                                não precisa ser caro nem complicado</p>
+                            <p class="text-justify">Oferecemos praticidade para quem busca atendimento humanizado
+                                e acessível à comunidade. Com estrutura completa e tecnológica, disponibilizamos mais de
+                                30 especialidades
+                                médicas e exames clínicos para quem precisa fazer um check-up ou uma consulta.</p>
+                            <p>Veja outros diferenciais:</p>
+                            <ul id="about-list">
+                                <li><i class="fas fa-check"></i> Hematologia</li>
+                                <li><i class="fas fa-check"></i> Bioquímica</li>
+                                <li><i class="fas fa-check"></i> Uroanálise</li>
+                                <li><i class="fas fa-check"></i> Parasitologia</li>
+                                <li><i class="fas fa-check"></i> Microbiologia</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <footer class="footer-d">
+            <div class="footer-left">
+                <img src="img/prolabPNG.png" width="300px" height="90px" alt="Logomarca Prolab"><br><br><br><br>
+                <p class="footer-company-name">Prolab - Laboratório de análises clínicas em Ubajara © 2021</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fas fa-map-marked"></i>
+                    <p><span>Rua Prudêncio Furtado, N°211 -
+                        </span> Centro - Ubajara / CE</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p><span>(88) 99809-9423
+                        </span> (88) 99833-9633</p>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:laboratorioprolabubj@hotmail.com">laboratorioprolabubj@hotmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p class="footer-company-about">
+                    <span>HORÁRIOS DE ATENDIMENTO
+                    </span>Segunda a Sexta: Das 6h00 - 17h00 <br>
+                    Sábado: Das 6h00 - 13h00
+                </p>
+            </div>
+        </footer>
+        <!-- Scripts do projeto -->
+        <script src="js/index.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/servicos.js"></script>
+</body>
+
+</html>
