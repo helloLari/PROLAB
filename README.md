@@ -2,7 +2,7 @@
 
 <h1>Requisitos</h>
 
-Será feito um projeto para criação/renovação do site principal do negocio do parceiro local , tendo em vista que hoje a grande parte dos empreendedores não dispõe de conhecimento e/ou so investem em plataformas comuns(instagram , facebook ,etc) será um projeto preparatorio para o projeto final , lembrando os sites aqui desenvolvidos serão utilizados para avaliação e validação tanto do time SOULCODE como tambem para com os parceiros . Empenho como se fosse uma oportunidade 100% real
+<p>Será feito um projeto para criação/renovação do site principal do negocio do parceiro local , tendo em vista que hoje a grande parte dos empreendedores não dispõe de conhecimento e/ou so investem em plataformas comuns(instagram , facebook ,etc) será um projeto preparatorio para o projeto final , lembrando os sites aqui desenvolvidos serão utilizados para avaliação e validação tanto do time SOULCODE como tambem para com os parceiros. </p>
 Requisitos gerais :
 
 A dinâmica desse projeto consiste em avaliar todas as tecnologias vista até bootstrap exigindo uma inserção de solução especifica (intermediaria) de cada uma delas no escopo global do projeto .
