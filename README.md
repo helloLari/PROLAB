@@ -11,7 +11,7 @@
 <p>Jquery : utilizar um que a partir de  220px do topo do body apareça uma seta ao lado direito da pagina que funciona como retorno suave para o inicio da pagina , aplicar essa função na pagina inicial do projeto.</p>
 <p>JavaScript: validação de cnpj <p>
 <p>Css: Estilizar o rodapé usando exclusivamente css</p>
-<p>HTML: Utilizar <aside> e <article></p>
+<p>HTML: Utilizar aside e article</p>
 realizar comentário no código linha 4 onde estão aplicados os requisitos específicos </p>
 
 <h2>Requisitos BootStrap</h2>
